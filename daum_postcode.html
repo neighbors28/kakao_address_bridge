@@ -29,9 +29,9 @@
                 if (data.userSelectedType == "R") {
                     // userSelectedType : 검색 결과에서 사용자가 선택한 주소의 타입
                     // return type : R - roadAddress, J : jibunAddress
-                    window.Fitnessstar.setAddress(data.zonecode, data.roadAddress, data.buildingName);
+                    window.kakaoAddress.setAddress(data.zonecode, data.roadAddress, data.buildingName);
                 } else {
-                    window.Fitnessstar.setAddress(data.zonecode, data.jibunAddress, data.buildingName);
+                    window.kakaoAddress.setAddress(data.zonecode, data.jibunAddress, data.buildingName);
                 }
             }
         }).embed(document.querySelector('#container'));
